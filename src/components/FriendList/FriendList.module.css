@@ -1,0 +1,10 @@
+.friendlist {
+    list-style: none;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    width: 200px;
+}

@@ -1,4 +1,5 @@
 import css from '../Statistics/Statistics.module.css';
+import PropTypes from 'prop-types';
 
 function generateRandomColor() {
   const letters = '0123456789ABCDEF';
@@ -27,4 +28,15 @@ export const Statistics = ({ title, stats }) => {
       ))}
     </section>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
 };
